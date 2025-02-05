@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Site</title>
+    
+
+</head>
+<body>
+    <h1>Welcome to my site</h1>
+    <h1 id="message"></h1>
+
+    <button onclick="inputTwoNumbers()">sum</button>
+    <script src="scripts.js"></script>
+    <script>
+        "use strict"
+        do{
+            var name=prompt("Enter your name");
+        }while(name==null || name.trim()=="" || !isNaN(name));
+
+        do{
+            var birthYear=prompt("Enter your birth year");
+        }while(birthYear==null || birthYear.trim()=="" || isNaN(birthYear) || birthYear > 2010);
+
+        console.log("Name: "+name);
+        console.log("Birth Year: "+birthYear);
+        console.log("Age: "+(2025-birthYear));
+        /*
+        
+        alert("Welcome to my site");
+        let name=prompt("Enter your name");
+        document.getElementById("message").innerText = "Welcome "+name+"!";
+        function inputTwoNumbers(){
+            var num1 = prompt("Enter the first number");
+            var num2 = prompt("Enter the second number");
+            var sum = sumTwoNumbers(parseInt(num1),parseInt(num2));
+            console.log("The sum of "+num1+" and "+num2+" is "+sum);
+        }
+
+        function checkEligbleTrack(faculty){
+            switch(faculty){
+                case "Engineering":
+                    console.log("You are eligible for Software Engineering");
+                    break;
+                case "Science":
+                    console.log("You are eligible for Computer Science");
+                    break;
+                case "Business":
+                    console.log("You are eligible for Business Administration");
+                    break;
+                default:
+                    console.log("You are not eligible for any track");
+            }
+        }
+        checkEligbleTrack("Engineering");
+        checkEligbleTrack("Science");
+        checkEligbleTrack("FCIT");*/
+    </script>
+    
+</body>
+</html>
