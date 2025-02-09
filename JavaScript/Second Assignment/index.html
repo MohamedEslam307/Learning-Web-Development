@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Site</title>
+    
+
+</head>
+<body>
+    <h1>Welcome to my site</h1>
+    <button id="btn" onclick="enter3DPoint()">Click me</button>
+
+    <script src="scripts.js"></script>
+    <script>
+        "use strict"
+        function enter3DPoint(){
+            do{
+                let x = prompt("Enter x coordinate");
+                let y = prompt("Enter y coordinate");
+                let z = prompt("Enter z coordinate");
+
+                var point = new Point3D(parseFloat(x),parseFloat(y),parseFloat(z));
+            }while(point.x == undefined || point.y == undefined || point.z == undefined);
+            point.print();
+            console.log(point.calculateDistance(new Point3D(5,0,1)));
+        }
+    </script>
+    
+</body>
+</html>
