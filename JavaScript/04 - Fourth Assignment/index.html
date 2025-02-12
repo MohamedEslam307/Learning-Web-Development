@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Site</title>
+    
+
+</head>
+<body>
+    <h1>Welcome to my site</h1>
+    <button id="btn" onclick="enter3DPoint()">Click me</button>
+
+    <script src="scripts.js"></script>
+    <script>
+        "use strict"
+        var firstStudent=new Student("Mohamed","Male",22,20011484,90);  
+        firstStudent.show();
+
+        var firstEmployee=new Employee("Reda","Male",25,99,50000);
+        firstEmployee.show();
+
+        let ScientificDepartment = {
+            name: "Scientific Department",
+            Location: "Building 1",
+            Head: "Dr. Ahmed",
+            Address : {
+                street: "Radwan",
+                city: "Alexandria",
+                country: "Egypt",
+                zipCode: 37914
+            },
+            display: function(){
+                console.log("Name: "+this.name);
+                console.log("Location: "+this.Location);
+                console.log("Head: "+this.Head);
+                console.log("Address: ");
+                console.log("Street: "+this.Address.street);
+                console.log("City: "+this.Address.city);
+                console.log("Country: "+this.Address.country);
+                console.log("Zip Code: "+this.Address.zipCode);
+            }
+        }
+        ScientificDepartment.display();
+    </script>
+    
+</body>
+</html>
