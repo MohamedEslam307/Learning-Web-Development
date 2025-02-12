@@ -8,40 +8,40 @@
 
 </head>
 <body>
-    <h1>Welcome to my site</h1>
-    <button id="btn" onclick="enter3DPoint()">Click me</button>
+    <h1>Tip of the day</h1>
+
+    <button id="tipsBtn" onclick="showRandomTip()">Show A Tip</button>
+    <button id="dateBtn" onclick="showTheDate()">Show The Date</button>
+
+    <p id="tipDisplay"></p>
+    <p id="dateDisplay"></p>
+    
+    <form>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" 
+               pattern="^([A-Za-z]{3,})(\s[A-Za-z]{3,})*$" 
+               required
+               title="Each part must have at least 3 letters, separated by spaces. No numbers or special characters.">
+        <button type="submit">Submit</button>
+    </form>
 
     <script src="scripts.js"></script>
     <script>
         "use strict"
-        var firstStudent=new Student("Mohamed","Male",22,20011484,90);  
-        firstStudent.show();
-
-        var firstEmployee=new Employee("Reda","Male",25,99,50000);
-        firstEmployee.show();
-
-        let ScientificDepartment = {
-            name: "Scientific Department",
-            Location: "Building 1",
-            Head: "Dr. Ahmed",
-            Address : {
-                street: "Radwan",
-                city: "Alexandria",
-                country: "Egypt",
-                zipCode: 37914
-            },
-            display: function(){
-                console.log("Name: "+this.name);
-                console.log("Location: "+this.Location);
-                console.log("Head: "+this.Head);
-                console.log("Address: ");
-                console.log("Street: "+this.Address.street);
-                console.log("City: "+this.Address.city);
-                console.log("Country: "+this.Address.country);
-                console.log("Zip Code: "+this.Address.zipCode);
-            }
+        let email=prompt("Please enter your email");
+        if(isValidEmail(email)){
+            alert("Email is valid");
+        }else{
+            alert("Email is not valid");
         }
-        ScientificDepartment.display();
+
+        let fullName=prompt("Please enter your full name");
+        if(isValidFullName(fullName)){
+            alert("Full name is valid");
+        }else{
+            alert("Full name is not valid");
+        }
+        
     </script>
     
 </body>
