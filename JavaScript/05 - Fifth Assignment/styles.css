@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between images */
+}
+.image-container img {
+    width: 200px; /* Adjust image size */
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: Rounded corners */
+}
