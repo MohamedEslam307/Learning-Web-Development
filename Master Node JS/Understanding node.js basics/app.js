@@ -66,7 +66,6 @@ function onRequest(request, response) {
         return;
         })
     }
-    
 }
 
 http.createServer(onRequest).listen(3000);
