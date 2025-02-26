@@ -4,16 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add User</title>
+    <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/add-user.css">
-
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="/" id="home-link">Home</a></li>
+            <li><a href="/add-user" id="add-user-link">Add User</a></li>
+            <li><a href="/show-users" id="show-users-link">Show Users</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
     <div class="container">
         <h1>Add User</h1>
         <form action="/add-user" method="POST">
             <input type="text" name="username" placeholder="Enter username" required>
-            <button type="submit">Send</button>
+            <button type="submit">Add User</button>
         </form>
     </div>
+    <script>
+        // Get the current page's link and add the 'selected' class
+        document.getElementById('add-user-link').classList.add('selected');
+    </script>
 </body>
 </html>

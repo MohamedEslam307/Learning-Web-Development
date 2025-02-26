@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href="/css/home.css">
-    
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="/" id="home-link">Home</a></li>
+            <li><a href="/add-user" id="add-user-link">Add User</a></li>
+            <li><a href="/show-users" id="show-users-link">Show Users</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
     <div class="container">
-        <h1 style="margin-top: 0;">Home Page</h1>
+        <h1>Welcome to the Home Page</h1>
         <div class="button-container">
             <form action="/show-users" method="GET">
                 <button type="submit">Show Users</button>
@@ -19,5 +29,10 @@
             </form>
         </div>
     </div>
+
+    <script>
+        // Get the current page's link and add the 'selected' class
+        document.getElementById('home-link').classList.add('selected');
+    </script>
 </body>
 </html>

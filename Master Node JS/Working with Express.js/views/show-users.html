@@ -4,15 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Users</title>
-    <link rel="stylesheet" href="/css/show-users.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/show-users.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="/" id="home-link">Home</a></li>
+            <li><a href="/add-user" id="add-user-link">Add User</a></li>
+            <li><a href="/show-users" id="show-users-link">Show Users</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
     <header>
         <h1>Users</h1>
     </header>
     <main>
-        <h1>The "Users" Page</h1>
-        <p>users should be here</p>
+        <h1>User List</h1>
+        <pre>Users will be displayed here.</pre>
     </main>
+
+    <script>
+        // Get the current page's link and add the 'selected' class
+        document.getElementById('show-users-link').classList.add('selected');
+    </script>
 </body>
 </html>
