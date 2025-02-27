@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/show-products.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="/" id="home-link">Home</a></li>
+            <li><a href="/add-product" id="add-product-link">Add product</a></li>
+            <li><a href="/show-products" id="show-products-link">Show products</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <header>
+        <h1>Products</h1>
+    </header>
+    <main>
+        <h1>Products List</h1>
+
+        <div class="product">
+            <h2>Product Name</h2>
+            <p>Price: $100</p>
+        </div>
+        
+        
+        <pre>Products will be displayed here.</pre>
+    </main>
+
+    <script>
+        // Get the current page's link and add the 'selected' class
+        document.getElementById('show-products-link').classList.add('selected');
+    </script>
+</body>
+</html>

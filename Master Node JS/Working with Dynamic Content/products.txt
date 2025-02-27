@@ -1,0 +1,50 @@
+Product name: book ,Product price: 12$
+Product name: pen ,Product price: 21$
+Product name: first ,Product price: 15$
+Product name: Blue Pen ,Product price: 5
+Product name: White T-shirt ,Product price: 12$
+Product name: El mon ,Product price: 1
+Product name: White T-shirt ,Product price: 12
+Product description: this is just a white t-shirt 
+Product name: Blue Pen ,Product price: 19
+Product description: this is just a blue pen
+Product name: White T-shirt ,Product price: 15
+Product description: this is just a white t-shirt
+Product name: undefined ,Product price: undefined
+Product description: undefined
+Product name: undefinedProduct description: undefined
+ ,Product price: undefined
+Product name: undefined ,Product price: undefined
+Product description: undefined
+Product name: undefined ,Product price: undefined
+Product description: undefined
+Product name: 34 ,Product price: 5
+Product description: 23
+Product name: undefined ,Product price: undefined
+Product description: undefined
+Product name: White T-shirtProduct description: This is just a white t-shirt
+ ,Product price: 16
+Product name: 3 ,Product price: 4
+Product description: 3
+Product name: 5 ,Product price: 3
+Product description: etw
+Product name: 4r5t ,Product price: gwse
+Product description: gseggggggggggggggggggggseggggggggggggggggggggsegggggggggggggggggggassssssssgeagtame,oefpijeapfimnaepofmn
+Product name: 3 ,Product price: ef
+Product description: 5y54rey
+Product name: W ,Product price: 3
+Product description: r4
+Product name: sa ,Product price: fgeq4
+Product description: 3fw
+ ,Product price: 4TG
+Product name: 43tProduct description: TG
+Product name: 4T ,Product price: FEW
+Product description: 3D
+Product name: White T-shirt ,Product price: 12
+Product description: this is just a white t-shirt
+Product name: White T-shirt ,Product price: 16
+Product description: This is just a white t-shirt
+Product name: White T-shirt ,Product price: 2
+Product description: This is just a white t-shirt
+Product name: White T-shirt ,Product price: 15
+Product description: this is just a white t-shirt
