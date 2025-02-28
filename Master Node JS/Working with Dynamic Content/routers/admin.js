@@ -11,7 +11,12 @@ router.use(bodyParser.urlencoded({ extended: false }));
 
 router.get('/show-products', (req, res, next) => {
     console.log('In get show-products middleware!');
-    res.render('show-products', { prods: products, path: '/show-products' , pageTitle: 'Show Products' });
+    res.render('show-products',{ 
+        prods:products,
+        path:'/show-products',
+        pageTitle: 'Show Products',
+        showProductsPage: true,
+    });
 }
 );
 
@@ -48,4 +53,3 @@ router.post('/add-product', (req, res, next) => {
 
 exports.router=router; 
 exports.products=products;
-

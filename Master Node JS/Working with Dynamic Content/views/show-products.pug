@@ -1,22 +1,21 @@
 extends layouts/main-layout.pug
 
 block styles
-    link(rel="stylesheet", href="css/show-products.css")
+  link(rel="stylesheet", href="css/show-products.css")
 
 block content
-    main
-      h1 Products List
-      .product-grid
-        if prods.length === 0
-          p No products found
-        else
-          each product in prods
-            .product
-              h2 #{product.title}
-              img(src="https://thehouseofrare.com/cdn/shop/files/MANO-WHITE00346_480x.jpg?v=1719486109", alt=product.title+" image")
-              p Price: #{product.price}$
-              p Description: #{product.description}
-              p Quantitiy: #{product.quantity}
-              
-              button Add to Cart
+  main
+    h1 Products List
+    .product-grid
+      if prods.length === 0
+        p No products found
+      else
+        each product in prods
+          .product
+            h2 #{product.title}
+            img(src="https://thehouseofrare.com/cdn/shop/files/MANO-WHITE00346_480x.jpg?v=1719486109", alt=product.title+" image")
+            p Price: #{product.price}$
+            p Description: #{product.description}
+            p Quantitiy: #{product.quantity}
             
+            button Add to Cart

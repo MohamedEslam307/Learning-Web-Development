@@ -48,3 +48,11 @@ Product name: White T-shirt ,Product price: 2
 Product description: This is just a white t-shirt
 Product name: White T-shirt ,Product price: 15
 Product description: this is just a white t-shirt
+Product name: as ,Product price: rw
+Product description: as
+Product name: sad ,Product price: as
+Product description: w
+Product name: White T-shirt ,Product price: 15
+Product description: This is just a white t-shirt
+Product name: book ,Product price: 15
+Product description: This is a book

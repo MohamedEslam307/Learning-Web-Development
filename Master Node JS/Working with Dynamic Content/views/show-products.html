@@ -4,38 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/show-products.css">
+    <link rel="stylesheet" href="../public/css/navbar.css">
+    <link rel="stylesheet" href="../public/css/show-products.css">
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
         <ul>
-            <li><a href="/" id="home-link">Home</a></li>
-            <li><a href="/add-product" id="add-product-link">Add product</a></li>
-            <li><a href="/show-products" id="show-products-link">Show products</a></li>
+            <li><a id="home-link" href="/" class="">Home</a></li>
+            <li><a id="add-product-link" href="/add-product" class="">Add product</a></li>
+            <li><a id="show-products-link" href="/show-products" class="selected">Show products</a></li>
         </ul>
     </nav>
-
-    <!-- Main Content -->
+    
     <header>
-        <h1>Products</h1>
-    </header>
-    <main>
         <h1>Products List</h1>
-
-        <div class="product">
-            <h2>Product Name</h2>
-            <p>Price: $100</p>
+    </header>
+    
+    <main>
+        <div class="product-grid">
+            <div class="product">
+                <h2>Sample Product 1</h2>
+                <img src="https://thehouseofrare.com/cdn/shop/files/MANO-WHITE00346_480x.jpg?v=1719486109" alt="Sample Product 1 image">
+                <p>Price: $10</p>
+                <p>Description: This is a sample product description.</p>
+                <p>Quantity: 5</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <h2>Sample Product 2</h2>
+                <img src="https://thehouseofrare.com/cdn/shop/files/MANO-WHITE00346_480x.jpg?v=1719486109" alt="Sample Product 2 image">
+                <p>Price: $15</p>
+                <p>Description: Another sample product description.</p>
+                <p>Quantity: 3</p>
+                <button>Add to Cart</button>
+            </div>
         </div>
-        
-        
-        <pre>Products will be displayed here.</pre>
     </main>
-
-    <script>
-        // Get the current page's link and add the 'selected' class
-        document.getElementById('show-products-link').classList.add('selected');
-    </script>
 </body>
 </html>
