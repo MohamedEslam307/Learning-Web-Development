@@ -56,3 +56,5 @@ Product name: White T-shirt ,Product price: 15
 Product description: This is just a white t-shirt
 Product name: book ,Product price: 15
 Product description: This is a book
+Product name: White T-shirt ,Product price: 12
+Product description: This is just a white t-shirt

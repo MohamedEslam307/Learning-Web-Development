@@ -11,18 +11,19 @@ router.use(bodyParser.urlencoded({ extended: false }));
 
 router.get('/show-products', (req, res, next) => {
     console.log('In get show-products middleware!');
-    res.render('show-products',{ 
+    res.render('show-products',{
         prods:products,
         path:'/show-products',
-        pageTitle: 'Show Products',
-        showProductsPage: true,
+        pageTitle: 'Show Products'
     });
 }
 );
 
 router.get('/add-product', (req, res, next) => {
     console.log('In get add-product middleware!');
-    res.sendFile( path.join(__dirname,'../', 'views','add-product.html'));
+    res.render('add-product',{
+        pageTitle: 'Add Product'
+    });
 }
 );
 

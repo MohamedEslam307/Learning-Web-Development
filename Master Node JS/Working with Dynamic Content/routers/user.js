@@ -4,7 +4,9 @@ const router = express.Router();
 
 router.get('/', (req, res, next) => {
     console.log('In get home middleware'); 
-    res.sendFile( path.join(__dirname,'../', 'views','home.html'));
+    res.render('home',{
+        pageTitle: 'Home'
+    });
 }
 );
 
