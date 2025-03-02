@@ -1,0 +1,35 @@
+a<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{pageTitle}}</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    {{#if showProductsPage}}
+    <link rel="stylesheet" href="css/show-products.css">
+    {{/if}}
+    {{#if pageNotFoundPage}}
+    <link rel="stylesheet" href="css/page-not-found.css">
+    {{/if}}
+    {{#if addProductPage}}
+    <link rel="stylesheet" href="css/add-product.css">
+    {{/if}}
+    {{#if homePage}}
+    <link rel="stylesheet" href="css/home.css">
+    {{/if}}
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="/" id="home-link" class="{{#if homePage}}selected{{/if}}">Home</a></li>
+            <li><a href="/add-product" id="add-product-link" class="{{#if addProductPage}}selected{{/if}}" >Add product</a></li>
+            <li><a href="/show-products" id="show-products-link" class="{{#if showProductsPage}}selected{{/if}}">Show products</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    {{{body}}}
+
+</body>
+</html>

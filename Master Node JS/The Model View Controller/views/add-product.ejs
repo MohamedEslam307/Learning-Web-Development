@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=pageTitle%></title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/add-product.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="/" id="home-link">Home</a></li>
+            <li><a href="/add-product" class="selected" id="add-product-link">Add product</a></li>
+            <li><a href="/show-products" id="show-products-link">Show products</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Add product</h1>
+        <form action="/add-product" method="POST">
+            <input type="text" name="productname" placeholder="Enter product name" required>
+            <input type="text" name="productprice" placeholder="Enter product price" required>
+            <input type="text" name="productquantity" placeholder="Enter product quantity" required>
+            <input type="text" name="productdescription" placeholder="Enter product description" required>
+            
+            <button type="submit">Add product</button>
+        </form>
+    </div>
+
+</body>
+</html>

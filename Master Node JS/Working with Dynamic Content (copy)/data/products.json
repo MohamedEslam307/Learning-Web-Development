@@ -1,0 +1,50 @@
+[
+  {
+    "title": "White T-shirt",
+    "price": "15",
+    "description": "This is just a white t-shirt",
+    "quantity": "3"
+  },
+  {
+    "title": "White T-shirt",
+    "price": "15",
+    "description": "This is just a white t-shirt",
+    "quantity": "3"
+  },
+  {
+    "title": "White T-shirt",
+    "price": "15",
+    "description": "This is just a white t-shirt",
+    "quantity": "3"
+  },
+  {
+    "title": "White T-shirt",
+    "price": "2",
+    "description": "This is just a white t-shirt",
+    "quantity": "54"
+  },
+  {
+    "title": "White T-shirt",
+    "price": "15",
+    "description": "This is just a white t-shirt",
+    "quantity": "3"
+  },
+  {
+    "title": "book",
+    "price": "15",
+    "description": "3D",
+    "quantity": "64"
+  },
+  {
+    "title": "Blue Pen",
+    "price": "2",
+    "description": "This is just a white t-shirt",
+    "quantity": "4"
+  },
+  {
+    "title": "new product",
+    "price": "13",
+    "description": "This is a new product",
+    "quantity": "32"
+  }
+]
