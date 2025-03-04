@@ -1,0 +1,12 @@
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <ul>
+        <li><a href="/" id="home-link" class="<%= (path === '/') ? 'selected' : '' %>">Home</a></li>
+        <li><a href="/admin/add-product" class="<%= (path === 'admin/add-product') ? 'selected' : '' %>" id="add-product-link">Add product</a></li>
+        <li><a href="/shop/show-products-user" class="<%= (path === 'shop/show-products-user') ? 'selected' : '' %>" id="show-products-user-link">Show products</a></li>
+        <li><a href="/admin/show-products-admin" class="<%= (path === 'admin/show-products-admin') ? 'selected' : '' %>" id="show-products-admin-link">Show products admin</a></li>
+        <li><a href="/admin/edit-product" class="<%= (path === 'admin/edit-product') ? 'selected' : '' %>" id="edit-product-link">Edit product</a></li>
+        <li><a href="/shop/cart" class="<%= (path === 'shop/cart') ? 'selected' : '' %>" id="cart-link">Cart</a></li>
+        <li><a href="/shop/checkout" class="<%= (path === 'shop/checkout') ? 'selected' : '' %>" id="checkout-link">Checkout</a></li>
+    </ul>
+</nav>

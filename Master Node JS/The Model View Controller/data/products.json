@@ -1,50 +1,24 @@
 [
   {
-    "title": "White T-shirt",
+    "title": "Product with image",
     "price": "15",
-    "description": "This is just a white t-shirt",
-    "quantity": "3"
-  },
-  {
-    "title": "White T-shirt",
-    "price": "15",
-    "description": "This is just a white t-shirt",
-    "quantity": "3"
+    "description": "this is a product with and image\r\n",
+    "quantity": "3",
+    "id": "iwfo7w2rb"
   },
   {
     "title": "White T-shirt",
     "price": "15",
-    "description": "This is just a white t-shirt",
-    "quantity": "3"
-  },
-  {
-    "title": "White T-shirt",
-    "price": "2",
-    "description": "This is just a white t-shirt",
-    "quantity": "54"
+    "description": "dummy\r\n",
+    "quantity": "3",
+    "id": "iq7xb7uzo"
   },
   {
     "title": "White T-shirt",
     "price": "15",
-    "description": "This is just a white t-shirt",
-    "quantity": "3"
-  },
-  {
-    "title": "book",
-    "price": "15",
-    "description": "3D",
-    "quantity": "64"
-  },
-  {
-    "title": "Blue Pen",
-    "price": "2",
-    "description": "This is just a white t-shirt",
-    "quantity": "4"
-  },
-  {
-    "title": "new product",
-    "price": "13",
-    "description": "This is a new product",
-    "quantity": "32"
+    "description": "test",
+    "quantity": "4",
+    "imageUrl": "https://thehouseofrare.com/cdn/shop/files/MANO-WHITE00346_480x.jpg?v=1719486109",
+    "id": "u6telfj0k"
   }
 ]

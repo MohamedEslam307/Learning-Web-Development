@@ -4,18 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%=pageTitle%></title>
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/show-products.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/show-products.css">
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar">
-        <ul>
-            <li><a id="home-link" href="/" class="">Home</a></li>
-            <li><a id="add-product-link" href="/add-product" class="">Add product</a></li>
-            <li><a id="show-products-link" href="/show-products" class="selected">Show products</a></li>
-        </ul>
-    </nav>
+    <%- include('../includes/navbar.ejs') %>
     
     <br><br><br>
     

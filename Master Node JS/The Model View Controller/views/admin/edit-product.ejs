@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=pageTitle%></title>
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/edit-product.css">
+</head>
+<body>
+    <%- include('../includes/navbar.ejs') %>
+    <br><br><br>
+    <main class="edit-product-main">
+        <h1 class="edit-product-title">Edit Product</h1>
+        
+        <form action="/admin/edit-product" method="POST" class="edit-product-form">
+        
+            <input type="text" id="productId" name="productId" class="form-input" placeholder="Enter product ID" required>
+            <input type="text" id="productname" name="productname" class="form-input" placeholder="Enter product name">
+            <input type="text" id="productprice" name="productprice" class="form-input" placeholder="Enter product price">
+            <input type="text" id="productquantity" name="productquantity" class="form-input" placeholder="Enter product quantity">
+            <input type="text" name="productimageUrl" placeholder="Enter product image URL" required>
+            <textarea rows="5" type="text" id="productdescription" name="productdescription" class="form-input" placeholder="Enter product description"></textarea>        
+            <button type="submit" class="form-button">Edit Product</button>
+        </form>
+    </main>
+</body>
+</html>
