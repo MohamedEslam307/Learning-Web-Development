@@ -1,4 +1,5 @@
 const product = require('../models/product');
+const cart = require('../models/cart');
 
 exports.getHome = (req, res, next) => {
     console.log('In get home middleware'); 
@@ -24,11 +25,19 @@ exports.getShowProducts = (req, res, next) => {
 
 exports.getShowCart = (req, res, next) => {
     console.log('In get show-cart middleware!');
-    res.render('shop/cart',{
-        pageTitle: 'Cart',
-        path: 'shop/cart'
+    cart.getTotalPrice(totalPrice=>{
+        console.log('Total Price: '+totalPrice);
+        prodcuts=cart.fetchAll(products=>{
+            res.render('shop/cart',{
+                pageTitle: 'Cart',
+                path: 'shop/cart',
+                products: products,
+                totalPrice: totalPrice
+            });
+            return res.end();
+        });
     });
-    return res.end();
+    
 }
 
 exports.getCheckout = (req, res, next) => {
@@ -55,6 +64,59 @@ exports.getProductDetails = (req, res, next) => {
             res.redirect('/shop/product-not-found');
         }
         return res.end();
-    });
-    
+    });   
 }
+
+exports.getAddToCart = (req, res, next) => {
+    productID = req.params.productID;
+    console.log('In get add-to-cart middleware! Product ID: '+productID);
+    product.searchProduct(productID,(foundProduct,isFound)=>{
+        if(isFound){
+            cart.addProduct(foundProduct.id,isAdded=>{
+                if(isAdded){
+                    console.log('Product added to cart!');
+                    res.redirect('/shop/show-products-user');
+                }else{
+                    console.log('Product not added to cart!');
+                    res.redirect('/shop/product-not-found');
+                }
+                return res.end();
+            });
+        }else{
+            console.log('Product not found!');
+            res.redirect('/shop/product-not-found');
+            return res.end();
+        }
+    });
+}
+
+exports.getProductdelete = (req, res, next) => {
+    productID = req.params.productID;
+    console.log('In get delete-item middleware! Product ID: '+productID);
+    cart.deleteProduct(productID,isDeleted=>{
+        if(isDeleted){
+            console.log('Product deleted from cart!');
+            res.redirect('/shop/cart');
+        }else{
+            console.log('Product not deleted from cart!');
+            res.redirect('/shop/product-not-found');
+        }
+        return res.end();
+    });
+}
+
+exports.getProductdeleteItem = (req, res, next) => {
+    productID = req.params.productID;
+    console.log('In get delete-product middleware! Product ID: '+productID);
+    cart.deleteProductItem(productID,isDeleted=>{
+        if(isDeleted){
+            console.log('Product deleted from cart!');
+            res.redirect('/shop/cart');
+        }else{
+            console.log('Product not deleted from cart!');
+            res.redirect('/shop/product-not-found');
+        }
+        return res.end();
+    });
+}
+

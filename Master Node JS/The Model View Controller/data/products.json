@@ -1,24 +1,26 @@
 [
   {
-    "title": "Product with image",
-    "price": "15",
-    "description": "this is a product with and image\r\n",
+    "title": "White T-shirt",
+    "price": "18",
+    "description": "This is a white t-shirt",
     "quantity": "3",
-    "id": "iwfo7w2rb"
+    "imageUrl": "https://thehouseofrare.com/cdn/shop/files/mano-mens-t-shirt-white27624_12378c0a-13fe-4ae7-898c-97937bbc2aae.jpg?v=1719483708",
+    "id": "6x6gcqalj"
   },
   {
-    "title": "White T-shirt",
-    "price": "15",
-    "description": "dummy\r\n",
-    "quantity": "3",
-    "id": "iq7xb7uzo"
+    "title": "iam editing the product name only and the image",
+    "price": "3.55",
+    "description": "This is an amazing book",
+    "quantity": "40",
+    "imageUrl": "https://www.bookprintingchina.com/wp-content/uploads/20230701/product4/1629950454966206.jpg",
+    "id": "z14a4qfov"
   },
   {
-    "title": "White T-shirt",
-    "price": "15",
-    "description": "test",
-    "quantity": "4",
-    "imageUrl": "https://thehouseofrare.com/cdn/shop/files/MANO-WHITE00346_480x.jpg?v=1719486109",
-    "id": "u6telfj0k"
+    "title": "Mona Liza ",
+    "price": "1000000",
+    "description": "mona liza painting, by davanchie",
+    "quantity": "1",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/640px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg",
+    "id": "6dorbj7t8"
   }
 ]
