@@ -1,0 +1,55 @@
+/* Navigation Bar Styles */
+/* Highlight the selected navigation item */
+.navbar ul li a.selected {
+    color: #abd4ff; /* Darker shade of the navbar color */
+}
+
+.navbar {
+    font-family: 'Arial', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 20px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 24px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-left: 10px;
+
+    transition: opacity 0.3s ease;
+    
+}
+
+.navbar ul li a:hover {
+    opacity: 0.8;
+}

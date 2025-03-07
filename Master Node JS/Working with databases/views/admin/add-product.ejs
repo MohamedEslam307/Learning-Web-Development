@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=pageTitle%></title>
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/add-product.css">
+</head>
+<body>
+    <%- include('../includes/navbar.ejs') %>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Add product</h1>
+        <form action="/admin/add-product" method="POST">
+            <input type="text" name="productname" placeholder="Enter product name" required>
+            <input type="text" name="productprice" placeholder="Enter product price" required>
+            <input type="text" name="productquantity" placeholder="Enter product quantity" required>
+            <input type="text" name="productimageUrl" placeholder="Enter product image URL" required>
+            
+            <textarea rows = 5 name="productdescription" placeholder="Enter product description" required></textarea>
+            <button type="submit">Add product</button>
+        </form>
+    </div>
+
+</body>
+</html>

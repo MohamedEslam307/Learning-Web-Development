@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=pageTitle%></title>
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/show-products.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <%- include('../includes/navbar.ejs') %>
+    
+    <br><br><br>
+    
+    <main>
+        <h1>Products List</h1>
+        <div class="product-grid">
+            <% if (prods.length === 0) { %>
+                <p>No products found.</p>
+            <% } else { for (let product of prods) {%>
+                <div class="product">
+                    
+                        <h2><%=product.title%></h2>
+                        <img src="https://thehouseofrare.com/cdn/shop/files/MANO-WHITE00346_480x.jpg?v=1719486109" alt="<%=product.title%> image">
+                        <p>Price: $<%=product.price%></p>
+                        <p>Description: <%=product.description%></p>
+                        <p>Quantity: <%=product.quantity%></p>
+                        <button>Add to Cart</button>
+                </div>
+                <% } %>
+            <% } %>
+        </div>
+    </main>
+</body>
+</html>
